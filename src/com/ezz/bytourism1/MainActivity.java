@@ -84,7 +84,6 @@ public class MainActivity extends Activity {
 		thHost.addTab(thHost.newTabSpec("tab1").setIndicator("首页",getResources().getDrawable(R.drawable.home)).setContent(R.id.tab1));
 		thHost.addTab(thHost.newTabSpec("tab2").setIndicator("景点",getResources().getDrawable(R.drawable.business)).setContent(R.id.tab2));
 		thHost.addTab(thHost.newTabSpec("tab3").setIndicator("个人",getResources().getDrawable(R.drawable.person)).setContent(R.id.tab3));	
-		thHost.addTab(thHost.newTabSpec("tab4").setIndicator("更多",getResources().getDrawable(R.drawable.point)).setContent(R.id.tab4));
 		csearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 			
 			@Override
