@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+        <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人中心"
+                android:textSize="23dp"
+                android:layout_marginLeft="4dp"
+                android:textIsSelectable="true"
+                android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:autoText="false"/>
+        <Button
+                style="@style/AppTheme"
+                android:layout_width="67dp"
+                android:layout_height="38dp"
+                android:text="注销"
+                android:id="@+id/button" android:layout_gravity="right"
+                android:layout_alignParentEnd="true" android:layout_alignParentTop="true" android:background="#e9f0ebeb"
+                android:onClick="signout"/>
+        <Button style="@style/AppTheme" android:layout_width="67dp" android:layout_height="38dp" android:text="首页"
+                android:id="@+id/returnhome" android:layout_gravity="right"
+                android:background="#e9f0ebeb" android:onClick="returnHome"
+                android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal" android:layout_weight="0.1" android:id="@+id/onew">
+
+
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+      <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+    
+        android:src="@drawable/ic_launcher" />
+      <TextView
+              android:id="@+id/textView2"
+              android:layout_width="97dp"
+              android:layout_height="wrap_content"
+              android:text="昵  称："
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:layout_alignParentTop="true" android:layout_toEndOf="@+id/imageView1"
+              android:layout_marginStart="30dp"/>
+      <TextView android:id="@+id/textView12" android:layout_width="97dp" android:layout_height="wrap_content"
+                android:text="账   号：" android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/imageView1" android:layout_alignStart="@+id/textView2"/>
+      <TextView android:id="@+id/nameview" android:layout_width="110dp" android:layout_height="wrap_content"
+                android:text="未登录" android:textAppearance="?android:attr/textAppearanceMedium"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true" android:layout_toEndOf="@+id/textView2"
+                android:layout_marginStart="35dp"/>
+      <TextView android:id="@+id/idview" android:layout_width="110dp" android:layout_height="wrap_content"
+                android:text="未登录" android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignTop="@+id/textView12" android:layout_alignStart="@+id/nameview"/>
+
+  </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+             android:id="@+id/relative4"
+             android:layout_width="fill_parent"
+             android:layout_height="60dp"
+
+             android:layout_marginTop="17dp" android:layout_weight="0.2">
+
+         <Button
+             android:id="@+id/buttoninvite"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_centerHorizontal="true"
+             android:background="#CFCFCF"
+             android:gravity="center"
+             android:text="我的足迹" />
+
+         <Button
+             android:id="@+id/buttonscenic"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="5dp"
+             android:background="#CFCFCF"
+             android:gravity="center"
+             android:text="我的好友" />
+
+         <Button
+             android:id="@+id/buttonpath"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="19dp"
+             android:background="#CFCFCF"
+             android:gravity="center"
+             android:text="我的收藏" />
+        <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="我的驴友"
+                android:layout_marginTop="39dp" android:layout_below="@+id/buttoninvite"
+                android:layout_alignParentStart="true"/>
+        <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="我的活动" android:layout_below="@+id/button1" android:layout_alignStart="@+id/button1"
+                android:layout_marginTop="29dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp" android:id="@+id/yep">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/login"
+                android:layout_gravity="center_horizontal"
+                android:text="登录"
+                android:layout_marginStart="96dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:onClick="trunToLogin"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册"
+                android:id="@+id/regist"
+                android:layout_alignParentTop="true" android:layout_alignParentEnd="true"
+                android:layout_marginEnd="91dp" android:onClick="turnToRegist"/>
+    </RelativeLayout>
+
+</LinearLayout>

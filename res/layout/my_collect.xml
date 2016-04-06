@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:id="@+id/relative3"
+     android:layout_width="fill_parent"
+     android:layout_height="40dp"
+     android:background="#696969"
+     >
+
+        <TextView
+            android:id="@+id/textmycollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/my_collect"
+             android:layout_marginLeft="10dp"
+               android:gravity="center"
+             android:textSize="18sp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/relative4"
+          android:layout_width="fill_parent"
+     	  android:layout_height="80dp"
+     	  android:layout_below="@+id/relative3"
+     	  android:layout_marginTop="17dp"
+        
+        >
+
+        <Button
+            android:id="@+id/buttoninvite"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#CFCFCF"
+            android:gravity="center"
+            android:text="@string/invite" />
+
+        <Button
+            android:id="@+id/buttonscenic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="#CFCFCF"
+            android:gravity="center"
+            android:text="@string/scenic" />
+
+        <Button
+            android:id="@+id/buttonpath"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="19dp"
+            android:background="#CFCFCF"
+            android:gravity="center"
+            android:text="@string/path" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relative5"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/relative4"
+        android:layout_marginTop="17dp"
+        android:gravity="top" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/gragshop" />
+
+         <Button
+             android:id="@+id/button2"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/button1"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:layout_marginTop="5dp"
+             android:text="@string/ticket" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+ 
